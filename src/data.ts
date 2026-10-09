@@ -3,13 +3,13 @@ import { FaAws, FaDatabase, FaChartLine, FaCogs, FaSearch, FaCheckCircle, FaBrai
 
 export const me = {
   name: 'Abhishek Vishwakarma',
-  role: 'ML and AI Engineer',
+  role: 'Aspiring ML and AI Engineer',
   phone: '+91-8928471210',
   email: 'vishwkarmaa018@gmail.com',
   github: 'https://github.com/v-Abhishek02',
   linkedin: 'https://linkedin.com/in/v-abhishek01',
   resume: '/Abhishek_Vishwakarma_Resume.pdf',
-  profile: 'MSc Data Science and AI candidate focused on Machine Learning and AI engineering, with hands-on experience building end-to-end ML and GenAI applications. Skilled in Python, SQL, model development, RAG, NLP, Computer Vision, and API-based deployment. Seeking ML Engineer, AI Engineer, or Data Science opportunities.',
+  profile: "I am pursuing an MSc in Data Science and Artificial Intelligence (2025 to 2027) after completing a BSc in Information Technology. My focus areas are machine learning, deep learning, neural networks, MLOps, and GenAI. I learn by building complete projects: models, APIs, and simple web apps. My goal is to become an ML Engineer, AI Engineer, or Data Scientist.",
 }
 
 export const ring = [SiPython, SiPytorch, SiTensorflow, SiDocker, SiFastapi, SiReact, SiPostgresql, SiOpencv]
@@ -44,8 +44,10 @@ export const education = [
 ]
 
 export const awards = [
-  ['Bharatiya Antariksh Hackathon, ISRO / Hack2skill', '2026'],
-  ['Innovex Storm Hackathon', '2026'],
+  ['Bharatiya Antariksh Hackathon, ISRO / Hack2skill (Participant)', '2026'],
+  ['Innovex Storm Hackathon (Participant)', '2026'],
   ['Deloitte Australia, Data Analytics Job Simulation (Forage)', '2025'],
   ['Data Science and Analytics, HP LIFE', '2026'],
+  ['Python Fundamentals, Great Learning', '2022'],
+  ["Python Bootcamp, Let's Upgrade", '2022'],
 ]

@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useState, type ReactNode, type FormEvent } 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
-import { FaGithub, FaLinkedin, FaPhone, FaDownload, FaTrophy, FaUser, FaGraduationCap, FaEnvelope, FaBriefcase, FaBrain, FaRobot, FaEye, FaServer, FaCode, FaArrowRight, FaExternalLinkAlt, FaLaptopCode, FaTools, FaSatellite, FaHeartbeat, FaFilm, FaShieldAlt, FaPaperPlane, FaBars, FaTimes } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaPhone, FaDownload, FaTrophy, FaUser, FaGraduationCap, FaEnvelope, FaBriefcase, FaBrain, FaRobot, FaEye, FaServer, FaCode, FaArrowRight, FaExternalLinkAlt, FaLaptopCode, FaTools, FaSatellite, FaHeartbeat, FaFilm, FaShieldAlt, FaSchool, FaProjectDiagram, FaChartLine, FaPaperPlane, FaBars, FaTimes } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import { me, skills, awards } from './data'
 
@@ -25,7 +25,7 @@ const Chars = ({ text }: { text: string }) => (
   </span>
 )
 
-const roles = ['ML ENGINEER', 'AI ENGINEER', 'DATA SCIENTIST']
+const roles = ['DATA SCIENCE AND AI STUDENT', 'ASPIRING ML ENGINEER', 'ASPIRING AI ENGINEER', 'ASPIRING DATA SCIENTIST']
 function Typed() {
   const [t, setT] = useState(roles[0])
   useEffect(() => {
@@ -68,33 +68,39 @@ def create_magic():
 
 create_magic()`
 
-const nav = ['home', 'about', 'services', 'skills', 'projects', 'contact']
+const nav = ['home', 'about', 'focus', 'skills', 'projects', 'contact']
 const services = [
-  { Icon: FaBrain, t: 'Machine Learning', d: 'Supervised and unsupervised models, feature engineering, and rigorous evaluation with cross-validation.' },
-  { Icon: FaRobot, t: 'GenAI and RAG', d: 'LLM agents and retrieval-augmented apps with LangGraph and LLaMA that give grounded answers.' },
-  { Icon: FaEye, t: 'Vision and NLP', d: 'CNN, Transformer, and OpenCV pipelines for images, text, and sequence data.' },
-  { Icon: FaServer, t: 'MLOps and APIs', d: 'Ship models as FastAPI services with Docker, CI/CD, MLflow, and AWS.' },
+  { Icon: FaChartLine, t: 'Machine Learning', d: 'Supervised and unsupervised learning, feature engineering, and careful evaluation with cross-validation, Precision, Recall, and AUC-ROC.' },
+  { Icon: FaProjectDiagram, t: 'Deep Learning and Neural Networks', d: 'Strong foundation in neural networks, CNNs, and Transformers. I coded an MLP from scratch and worked with CNN-BiLSTM and GNN models in OrbitGuard.' },
+  { Icon: FaRobot, t: 'GenAI and RAG', d: 'Exploring LLM agents and retrieval. I built a conversational sales agent with LangGraph and LLaMA 3.1 that answers from a knowledge base and captures leads.' },
+  { Icon: FaServer, t: 'MLOps and Deployment', d: 'Learning to take models beyond notebooks with FastAPI, Docker, MLflow, CI/CD, and AWS basics.' },
 ]
 const info = [
   { Icon: FaUser, k: 'Name', v: 'Abhishek Vishwakarma' },
-  { Icon: FaGraduationCap, k: 'Education', v: 'MSc Data Science and AI' },
+  { Icon: FaGraduationCap, k: 'Education', v: 'MSc Data Science and AI (2025 to 2027)' },
   { Icon: FaEnvelope, k: 'Email', v: me.email },
   { Icon: FaGithub, k: 'GitHub', v: 'v-Abhishek02' },
-  { Icon: FaBriefcase, k: 'Availability', v: 'Open to ML and AI roles' },
-  { Icon: FaBrain, k: 'Focus', v: 'Machine Learning and GenAI' },
+  { Icon: FaBriefcase, k: 'Availability', v: 'Open to internships and entry-level roles' },
+  { Icon: FaBrain, k: 'Focus', v: 'ML, Deep Learning, GenAI' },
+]
+const academics = [
+  { Icon: FaGraduationCap, t: 'Master of Science in Data Science and Artificial Intelligence', s: 'Mithibai College, University of Mumbai', y: '2025 to 2027 | Pursuing' },
+  { Icon: FaGraduationCap, t: 'Bachelor of Science in Information Technology', s: 'Elphinstone College, Homi Bhabha State University (HBSU)', y: '2022 to 2025 | Completed' },
+  { Icon: FaSchool, t: 'Higher Secondary Certificate (HSC)', s: "Bharatiya Vidya Bhavan's College", y: '' },
+  { Icon: FaSchool, t: 'Secondary School Certificate (SSC)', s: 'MCHS School', y: '' },
 ]
 const pIcons = [FaSatellite, FaRobot, FaHeartbeat, FaFilm]
 const blurbs = [
-  'Real-time LEO debris tracking, collision-risk prediction, and autonomous maneuver support.',
-  'Conversational sales agent with intent analysis, grounded RAG answers, and lead capture.',
+  'Tracks objects in low Earth orbit and predicts collision risk using SGP4, CNN-BiLSTM, PINN, GNN, and PPO, with a FastAPI and React dashboard.',
+  'Conversational sales agent on LangGraph and LLaMA 3.1 that detects intent, answers from a knowledge base, and captures leads.',
   'Custom MLP validated with 5-fold cross-validation, Precision, Recall, and AUC-ROC.',
   'Content-based recommender using cosine similarity and live TMDB metadata.',
 ]
 const stats = [
   { Icon: FaLaptopCode, to: 5, suf: '', l: 'Projects built' },
-  { Icon: FaTrophy, to: 4, suf: '', l: 'Hackathons and certificates' },
-  { Icon: FaTools, to: 30, suf: '+', l: 'Tools and technologies' },
-  { Icon: FaGraduationCap, to: 2, suf: '', l: 'Degrees: BSc IT, MSc DS and AI' },
+  { Icon: FaTrophy, to: 6, suf: '', l: 'Hackathons and certificates' },
+  { Icon: FaTools, to: 30, suf: '+', l: 'Tools explored' },
+  { Icon: FaGraduationCap, to: 1, suf: '', l: 'Degree done, MSc ongoing' },
 ]
 
 type Work = { title: string; text: string; tags: string[]; Icon: any; badge?: string; code?: string; demo?: string; note?: string }
@@ -104,7 +110,7 @@ const work: Work[] = [
   { title: 'AutoStream Agent', Icon: FaRobot, text: blurbs[1], tags: ['LangGraph', 'LLaMA 3.1', 'RAG', 'Streamlit'], code: GH + '/autostream-agent' },
   { title: 'Breast cancer detection', Icon: FaHeartbeat, text: 'MLP coded from scratch in NumPy, 5-fold cross-validated, and deployed as a Streamlit app.', tags: ['NumPy', 'MLP', '5-fold CV', 'Streamlit'], code: GH + '/breast-cancer-mlp', demo: 'https://breast-cancer-mlp-prediction.streamlit.app/' },
   { title: 'Movie recommendation system', Icon: FaFilm, text: 'Flask app recommending similar movies by cosine similarity, with TMDB posters, login, and watchlist.', tags: ['Flask', 'MySQL', 'Cosine similarity', 'TMDB API'], code: GH + '/Movies_Recommendation_System_Using_ML' },
-  { title: 'Border AI', Icon: FaShieldAlt, badge: 'Team project', text: 'Smart India Hackathon (SIH26187) computer vision pipeline: YOLOv8 detection, license-plate reading, face matching against a watchlist, zone checks, and alerts.', tags: ['YOLOv8', 'OpenCV', 'ANPR', 'Docker'], code: 'https://github.com/jaimin004/border_ai' },
+  { title: 'Border AI', Icon: FaShieldAlt, badge: 'Hackathon', text: 'Hackathon team project I took part in: YOLOv8 detection, license-plate reading, face matching, zone checks, and alerts.', tags: ['YOLOv8', 'OpenCV', 'ANPR', 'Docker'], code: 'https://github.com/jaimin004/border_ai' },
   { title: 'More on GitHub', Icon: FaGithub, text: 'House price prediction with Flask and other experiments.', tags: [], code: GH },
 ]
 
@@ -220,7 +226,7 @@ export default function App() {
               <Chars text="ABHISHEK" /><br /><span className="text-fire"><Chars text="VISHWAKARMA" /></span>
             </h1>
             <p className="hero-in mt-5 text-base font-semibold tracking-[0.3em] sm:text-lg"><Typed /></p>
-            <p className="hero-in mt-5 max-w-md text-sm leading-relaxed text-white/70">I build intelligent, end-to-end ML and GenAI applications, from orbital collision models to RAG sales agents, with clean code and a love for solving real problems.</p>
+            <p className="hero-in mt-5 max-w-md text-sm leading-relaxed text-white/70">I am an MSc Data Science and AI student who learns by building. My projects range from a space-debris collision-risk system to a RAG-style sales agent, and I am looking for internship or entry-level opportunities where I can grow into an ML Engineer, AI Engineer, or Data Scientist.</p>
             <div className="hero-in mt-7 flex flex-wrap gap-4">
               <a href="#projects" className="group flex items-center gap-3 rounded bg-fire px-6 py-3 text-xs font-semibold tracking-wider text-black transition hover:-translate-y-1 hover:shadow-[0_10px_30px_-8px_#ff5a14]">VIEW MY WORK <FaArrowRight className="transition group-hover:translate-x-1" /></a>
               <a href={me.resume} download className="group flex items-center gap-3 rounded border border-fire px-6 py-3 text-xs font-semibold tracking-wider transition hover:-translate-y-1 hover:bg-fire/10">DOWNLOAD RESUME <FaDownload className="transition group-hover:translate-y-0.5" /></a>
@@ -252,7 +258,7 @@ export default function App() {
         <div className={`${box} grid gap-12 lg:grid-cols-[1fr_1.3fr]`}>
           <div className="rv lg:border-r lg:border-line lg:pr-12">
             <p className={label}>ABOUT ME</p>
-            <h2 className="mt-3 text-3xl font-bold leading-tight">I'm an ML engineer who loves building intelligent systems.</h2>
+            <h2 className="mt-3 text-3xl font-bold leading-tight">I'm a student learning to build intelligent systems.</h2>
             <p className="mt-4 text-sm leading-relaxed text-white/70">{me.profile}</p>
             <p className="mt-4 font-script text-4xl text-fire">Abhishek</p>
           </div>
@@ -267,9 +273,25 @@ export default function App() {
         </div>
       </section>
 
-      <section id="services" className="py-20 md:py-24">
+      <section id="education" className="border-b border-line py-20 md:py-24">
         <div className={box}>
-          <div className="rv mb-10 text-center"><p className={label}>WHAT I DO</p><h2 className="mt-2 text-3xl font-bold md:text-4xl">Services I Offer</h2></div>
+          <Head tag="EDUCATION" title="Academic Background" />
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {academics.map(({ Icon, t, s, y }) => (
+              <div key={t} className="rv group rounded-xl border border-line bg-card p-6 transition duration-300 hover:-translate-y-2 hover:border-fire hover:shadow-[0_18px_40px_-20px_#ff5a14]">
+                <IconBox><Icon /></IconBox>
+                <h3 className="mt-5 text-base font-semibold">{t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/60">{s}</p>
+                {y && <p className="mt-3 text-xs font-semibold text-fire">{y}</p>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" className="py-20 md:py-24">
+        <div className={box}>
+          <div className="rv mb-10 text-center"><p className={label}>FOCUS AREAS</p><h2 className="mt-2 text-3xl font-bold md:text-4xl">What I'm Learning and Building</h2></div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {services.map(({ Icon, t, d }) => (
               <div key={t} className="rv group rounded-xl border border-line bg-card p-6 transition duration-300 hover:-translate-y-2 hover:border-fire hover:shadow-[0_18px_40px_-20px_#ff5a14]">
@@ -284,7 +306,7 @@ export default function App() {
 
       <section id="skills" className="border-y border-line bg-card py-16 md:py-20">
         <div className={box}>
-          <Head tag="TECH STACK" title="Tools I work with" />
+          <Head tag="TECH STACK" title="Tools I use and am learning" />
           <div className="rv mb-8 flex flex-wrap gap-2">
             {groups.map((g) => (
               <button key={g} onClick={() => setTab(g)} className={`rounded-full border px-4 py-1.5 text-xs font-medium transition ${tab === g ? 'border-fire bg-fire text-black' : 'border-line hover:border-fire'}`}>{g}</button>
@@ -303,7 +325,7 @@ export default function App() {
 
       <section id="projects" className="py-20 md:py-24">
         <div className={box}>
-          <Head tag="FEATURED PROJECTS" title="Selected Work" right={<a href={me.github} target="_blank" rel="noreferrer" className="group hidden items-center gap-2 text-xs font-semibold tracking-wider text-fire sm:flex">VIEW ALL PROJECTS <FaArrowRight className="transition group-hover:translate-x-1" /></a>} />
+          <Head tag="FEATURED PROJECTS" title="Projects I've Built" right={<a href={me.github} target="_blank" rel="noreferrer" className="group hidden items-center gap-2 text-xs font-semibold tracking-wider text-fire sm:flex">VIEW ALL PROJECTS <FaArrowRight className="transition group-hover:translate-x-1" /></a>} />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {work.map((p, i) => {
               const wide = i >= 4
@@ -358,7 +380,7 @@ export default function App() {
           <div className="rv">
             <p className={label}>LET'S WORK TOGETHER</p>
             <h2 className="mt-2 text-3xl font-bold">Get In Touch</h2>
-            <p className="mt-3 max-w-md text-sm text-white/60">Have a project in mind or want to say hello? Open to ML Engineer, AI Engineer, and Data Science roles.</p>
+            <p className="mt-3 max-w-md text-sm text-white/60">I'm a student looking for internship and entry-level opportunities in machine learning, AI, and data science. Feel free to reach out.</p>
             <div className="mt-6 grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
               <div className="space-y-4 text-sm">
                 {[[FaEnvelope, me.email, `mailto:${me.email}`], [FaLinkedin, 'v-abhishek01', me.linkedin], [FaGithub, 'v-Abhishek02', me.github]].map(([I, t, h]: any) => (
@@ -381,7 +403,7 @@ export default function App() {
         <div className={`${box} grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4`}>
           <div>
             <p className="flex items-center gap-2 text-lg font-bold"><span className="grid h-8 w-8 place-items-center rounded bg-fire font-extrabold text-black">A</span>ABHISHEK <span className="-ml-1 text-fire">V.</span></p>
-            <p className="mt-3 text-sm text-white/60">Building intelligent systems, one model at a time.</p>
+            <p className="mt-3 text-sm text-white/60">Learning to build intelligent systems, one project at a time.</p>
           </div>
           <div>
             <p className="mb-3 text-sm font-semibold">Quick Links</p>
@@ -394,7 +416,7 @@ export default function App() {
                 <a key={n} href={h} target="_blank" rel="noreferrer" aria-label={n} className="grid h-9 w-9 place-items-center rounded-full bg-white/10 transition duration-300 hover:-translate-y-1 hover:bg-fire hover:text-black"><I /></a>
               ))}
             </div>
-            <p className="mt-4 text-sm text-fire">Available for ML and AI roles.<br />Let's build something amazing.</p>
+            <p className="mt-4 text-sm text-fire">Open to internships and entry-level<br />ML, AI, and data science roles.</p>
           </div>
           <div>
             <p className="mb-3 text-sm font-semibold">Resume</p>
